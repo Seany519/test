@@ -1,8 +1,8 @@
 FROM kalilinux/kali-rolling
 
 # Install necessary packages
-RUN apt-get update && \
-    apt-get install -y kali-desktop-core kali-desktop-live tigervnc-standalone-server
+RUN sudo apt-get update && \
+    sudo apt-get install -y kali-desktop-core kali-desktop-live tigervnc-standalone-server
 
 # Set up VNC password
 RUN mkdir -p ~/.vnc && \
