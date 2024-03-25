@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kali Linux GUI</title>
+  <script src="https://unpkg.com/noVNC"></script>
+  <script>
+    window.addEventListener('load', function () {
+      var vnc = new RFB(document.getElementById('vnc'), '{{ vnc_url }}');
+      vnc.connect('{{ vnc_url }}');
+    });
+  </script>
+</head>
+<body>
+  <h1>Kali Linux GUI</h1>
+  <div id="vnc" style="width: 800px; height: 600px;"></div>
+</body>
+</html>
