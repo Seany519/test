@@ -1,4 +1,4 @@
-FROM kalilinux/kali-linux-docker
+FROM kalilinux/kali-rolling
 
 # Install necessary packages
 RUN apt-get update && \
